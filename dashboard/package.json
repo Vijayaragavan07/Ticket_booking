@@ -1,0 +1,19 @@
+{
+  "name": "dashboard",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --base=/assets/ticket_booking/dashboard/ && yarn copy-html-entry",
+    "preview": "vite preview",
+    "copy-html-entry": "cp ../ticket_booking/public/dashboard/index.html ../ticket_booking/www/dashboard.html"
+  },
+  "dependencies": {
+    "vue": "^3.3.11"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.5.2",
+    "vite": "^5.0.8"
+  }
+}
